@@ -2,7 +2,7 @@
 insieme = 0
 while (insieme < 5):
 
-
+#inserimento numero
     num = int(input("Inserisci un numero: "))
 
     if num > 1:
