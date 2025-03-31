@@ -26,13 +26,13 @@ while (flag):
                 #se non è primo lo aggiungo alla lista dei numeri non primi
                 non_primi.append(num)
 
-    scelta = input("Vuoi vedere i numeri primi (1), non primi (2) o entrambi (3)? ")
+    scelta = int(input("Vuoi vedere i numeri primi (1), non primi (2) o entrambi (3)? "))
 
-    if scelta == '1':
+    if scelta == 1:
         print("Numeri primi nell'intervallo:", primi)
-    elif scelta == '2':
+    elif scelta == 2:
         print("Numeri non primi nell'intervallo:", non_primi)
-    elif scelta == '3':
+    elif scelta == 3:
         print("Numeri primi:", primi)
         print("Numeri non primi:", non_primi)
     else:
