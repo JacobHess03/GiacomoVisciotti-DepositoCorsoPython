@@ -29,7 +29,7 @@ match seleziona:
 
 
             num = int(input("Inserisci un numero: "))
-            #Controllo con l'operatore resto se il numero è divisibile per 2
+            #Controllo con l'operatore resto se il numero è divisibile per se stesso e per i precedenti
             #se è pari incremento la variabile insieme e salvo il numero
 
             if num > 1:
