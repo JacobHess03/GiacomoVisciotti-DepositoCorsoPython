@@ -24,30 +24,30 @@ def aggiungi_alunno():
 
     righe = contenuto.splitlines()
 
-    alunno_presente = False  # flag
+    
 
     for riga in righe:
         dati = riga.strip().split(",")
         if dati[0] == nome and dati[1] == cognome:
-            alunno_presente = True
-            break
+            
+            print("Alunno già presente nel registro.\n")
+            return  # oppure: continua, se vuoi che possa riprovare
     
-    if alunno_presente:
-        print("Alunno già presente nel registro.\n")
-        return  # oppure: continua, se vuoi che possa riprovare
-    else:
-        numero_voti = int(input("Quanti voti vuoi inserire? "))
-        voti = []
-        for i in range(numero_voti):
-            voto = int(input(f"Inserisci voto {i+1}: "))
-            voti.append(voto)
+    
+        
 
-        voti_str = "-".join([str(v) for v in voti])
-        media = calcola_media(voti)
+    numero_voti = int(input("Quanti voti vuoi inserire? "))
+    voti = []
+    for i in range(numero_voti):
+        voto = int(input(f"Inserisci voto {i+1}: "))
+        voti.append(voto)
 
-        with open("08_aprile_2025\\registro.csv", "a") as file:
-            file.write(f"\n{nome},{cognome},{voti_str},{media}")
-        print("Alunno aggiunto!\n")
+    voti_str = "-".join([str(v) for v in voti])
+    media = calcola_media(voti)
+
+    with open("08_aprile_2025\\registro.csv", "a") as file:
+        file.write(f"\n{nome},{cognome},{voti_str},{media}")
+    print("Alunno aggiunto!\n")
         
 
 
@@ -78,6 +78,7 @@ def modifica_alunno():
 
     for riga in righe:
         dati = riga.strip().split(",")
+        
         if dati[0] == nome and dati[1] == cognome:
             trovato = True
             print("Alunno trovato. Inserisci i nuovi voti.")
@@ -91,6 +92,7 @@ def modifica_alunno():
             nuove_righe.append(f"{nome},{cognome},{voti_str},{media}")
         else:
             nuove_righe.append(riga)
+        
     if trovato:
         with open("08_aprile_2025\\registro.csv", "w") as file:
             file.write("\n".join(nuove_righe))
@@ -138,9 +140,10 @@ def modifica_nomi_alunno():
             nuovo_cognome = input("Nuovo cognome: ").strip()
             nuove_righe.append(f"{nuovo_nome},{nuovo_cognome},{dati[2]},{dati[3]}")
             print("Nome e cognome modificati!\n")
+            
         else:
-            nuove_righe.append(riga) # sovrascrivi il file 
-
+            nuove_righe.append(riga)
+   
     if trovato:
         with open("08_aprile_2025\\registro.csv", "w") as file:
             file.write("\n".join(nuove_righe))
