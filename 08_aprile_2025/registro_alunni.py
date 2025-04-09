@@ -8,12 +8,15 @@ def calcola_media(voti):
 
 def crea_file_csv():
     try:
+        # Prova ad aprire il file in lettura per vedere se esiste
+        with open("08_aprile_2025\\registro.csv", "r"):
+            pass
+    except:
         # Se il file non esiste, lo crea con intestazione
         with open("08_aprile_2025\\registro.csv", "w") as file:
-            file.write("Nome,Cognome,Voti,Media") # costruisce il csv 1 riga
-    except:
-        pass  # Se il file esiste, non fa nulla
+            file.write("Nome,Cognome,Voti,Media")
 
+    
 def aggiungi_alunno():
     nome = input("Nome: ").strip()
     cognome = input("Cognome: ").strip()
