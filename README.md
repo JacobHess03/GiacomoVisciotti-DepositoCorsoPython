@@ -25,7 +25,7 @@ Questo progetto raccoglie gli esercizi, le applicazioni e le competenze acquisit
    - Programmazione ad oggetti (OOP)
    - Gestione file (CSV, JSON, TXT)
 4. **📊 Data Science & Machine Learning**
-   - Numpy, Pandas
+   - Numpy, Pandas, matplot
    - Data Cleaning e Feature Engineering
    - Modelli di regressione e classificazione (Scikit-Learn)
    - Valutazione dei modelli
