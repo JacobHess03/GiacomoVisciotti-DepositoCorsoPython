@@ -75,8 +75,8 @@ Engineer | Python & Machine Learning | Data Enthusiast | Data Science
 
 Un sentito ringraziamento a:
 
-    Itconsulting S.r.l.
-  
-    Gi Group
-  
-    Tutti i docenti e tutor che hanno reso possibile questo percorso di crescita professionale.
+ Itconsulting S.r.l.
+
+ Gi Group
+
+ Tutti i docenti e tutor che hanno reso possibile questo percorso di crescita professionale.
