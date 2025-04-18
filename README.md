@@ -42,7 +42,7 @@ Questo progetto raccoglie gli esercizi, le applicazioni e le competenze acquisit
 📁 `Esercizi_Python/`  
 - Calcolatrice scientifica
 - Gestione file CSV senza `import`
-- Registro studenti con CRUD
+- Registro studenti
 - Simulazione oggetti OOP (es. Animali, Teatro)
 
 📁 `Data_Analysis/`  
