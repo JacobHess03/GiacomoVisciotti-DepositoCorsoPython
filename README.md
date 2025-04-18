@@ -69,6 +69,7 @@ Questo progetto raccoglie gli esercizi, le applicazioni e le competenze acquisit
 
 Giacomo Visciotti
 Engineer | Python & Machine Learning | Data Enthusiast | Data Science
+
 📫 Contatti: LinkedIn • Email
 
 ⭐ Riconoscimenti
