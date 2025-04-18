@@ -10,7 +10,7 @@ Questo progetto raccoglie gli esercizi, le applicazioni e le competenze acquisit
 - Acquisire padronanza del linguaggio **Python** per l'analisi dei dati.
 - Sviluppare progetti di **Machine Learning** con librerie avanzate.
 - Gestire **database relazionali** utilizzando **SQL**, sia da riga di comando che con Python.
-- Applicare metodologie di **Data Cleaning**, **Data Visualization** e **modellazione predittiva**.
+- Applicare metodologie di **Data Analysis**, **Data Visualization**.
 - Progettare software con **approccio OOP** e strutture dati complesse.
 
 ---
@@ -31,9 +31,9 @@ Questo progetto raccoglie gli esercizi, le applicazioni e le competenze acquisit
    - Valutazione dei modelli
 5. **🗄 SQL & Database Relazionali**
    - Creazione tabelle e relazioni
-   - Query DDL, DML, JOIN, GROUP BY
+   - Query JOIN, GROUP BY etc...
    - Interazione con SQLite/MySQL da Python
-   - ORM con SQLAlchemy
+   
 
 ---
 
@@ -45,20 +45,16 @@ Questo progetto raccoglie gli esercizi, le applicazioni e le competenze acquisit
 - Registro studenti
 - Simulazione oggetti OOP (es. Animali, Teatro)
 
-📁 `Data_Analysis/`  
-- Analisi vendite e visualizzazione
-- Pulizia dataset reali
+📁 `Data_Analysis/`  & `Machine_Learning/` 
+- Analisi e visualizzazione
+- Pulizia dataset
 - Calcolo medie, deviazioni standard e istogrammi
 
-📁 `Machine_Learning/`  
-- Regressione lineare multipla su dataset auto
-- KNN, Decision Tree, Random Forest
-- Progetto finale: predizione clienti bancari
 
 📁 `SQL/`  
 - Script SQL per creazione e gestione DB
 - Query avanzate con JOIN e funzioni aggregate
-- Integrazione SQLAlchemy con classi Python
+- Integrazione SQL con classi Python
 
 ---
 
